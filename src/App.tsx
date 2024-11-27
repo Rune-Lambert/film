@@ -2,34 +2,40 @@ import { useState } from 'react'
 
 
 function App() {
-  const [klikken, setklikken] = useState(!false)
-
-  const handelklikken = ()=>{
-    setklikken(klikken)
+  let [klikken, setklikken] = useState(0)
+ 
+  
+  const handelklikken1 = ()=>{
+    setklikken(klikken+=1)
   }
+  // const handelklikken2 = ()=>{
+  //   setklikken(klikken+=1)
+  // }
+  // const handelklikken3 = ()=>{
+  //   setklikken(klikken+=1)
+  // }
+  // const handelklikken4 = ()=>{
+  //   setklikken(klikken+=1)
+  // }
 
   return (
-  //  <div>
-  //   <div>
-  //     <button onClick={handelklikken}>
-  //       klikhier
-  //     </button>
-  //     <p>{klikken && 1}</p>
-  //   </div>
-  //  </div>
   <div>
   <div>
     <div>
-      trhiller
+      <h1>thriller</h1>
+      <button onClick={handelklikken1}>like</button> <p>{klikken}</p>
     </div>
     <div>
-      comedie
+      <h1>comedie</h1>
+      <button onClick={handelklikken1}>like</button> <p>{klikken}</p>
     </div>
     <div>
-      actie
+      <h1>actie</h1>
+      <button onClick={handelklikken1}>like</button> <p>{klikken}</p>
     </div>
     <div>
-      romantisch
+      <h1>romantisch</h1>
+      <button onClick={handelklikken1}>like</button> <p>{klikken}</p>
     </div>
   </div>
 </div>
