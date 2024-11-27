@@ -2,21 +2,37 @@ import { useState } from 'react'
 
 
 function App() {
-  const [klikken, setklikken] = useState(true)
+  const [klikken, setklikken] = useState(!false)
 
   const handelklikken = ()=>{
     setklikken(klikken)
   }
 
   return (
-   <div>
+  //  <div>
+  //   <div>
+  //     <button onClick={handelklikken}>
+  //       klikhier
+  //     </button>
+  //     <p>{klikken && 1}</p>
+  //   </div>
+  //  </div>
+  <div>
+  <div>
     <div>
-      <button onClick={handelklikken}>
-        klikhier
-      </button>
-      <p>{klikken && 1}</p>
+      trhiller
     </div>
-   </div>
+    <div>
+      comedie
+    </div>
+    <div>
+      actie
+    </div>
+    <div>
+      romantisch
+    </div>
+  </div>
+</div>
   )
 }
 
